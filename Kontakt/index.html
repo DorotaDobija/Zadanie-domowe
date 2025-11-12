@@ -33,6 +33,51 @@
           laboriosam est doloremque optio.
         </p>
       </section>
+
+      <section>
+        <h2>Formularz kontaktowy</h2>
+
+        <!-- znacznik br w formularzu do usunięcia przed CSS!!!!  -->
+
+        <form action="submit">
+          <label autofocus for="name">Imię:</label>
+          <input type="text" id="name" name="name" /><br />
+
+          <label for="surname">Nazwisko:</label>
+          <input type="text" id="surname" name="surname" /><br />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@abc.pl"
+          /><br />
+
+          <label for="phone">Telefon:</label>
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="+48 000 000 000"
+          /><br />
+
+          <label for="topic">Temat wiadomości:</label>
+          <select id="topic" name="topic">
+            <option value="question">Pytanie techniczne</option>
+            <option value="invoices">Faktury i płatności</option>
+            <option value="others">Inne</option></select
+          ><br />
+
+          <label for="message">Treść wiadomości:</label>
+          <textarea id="message" name="message"></textarea><br />
+
+          <label for="statute">Zaakceptuj regulamin:</label>
+          <input required type="checkbox" id="statute" name="statute" /><br />
+
+          <button type="submit">Wyślij</button>
+        </form>
+      </section>
     </main>
 
     <footer>
